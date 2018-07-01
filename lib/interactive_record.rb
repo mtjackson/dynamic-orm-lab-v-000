@@ -62,6 +62,8 @@ class InteractiveRecord
         sql = "SELECT * FROM #{self.table_name} WHERE #{key} = '#{value}'"
       end
     end
+    DB{:conn}.execute(sql)
+    end
 
 
   end
