@@ -60,6 +60,7 @@ class InteractiveRecord
         sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{value}"
       else
         sql = "SELECT * FROM #{self.table_name} WHERE #{key} = '#{value}'"
+      end
     end
 
 
