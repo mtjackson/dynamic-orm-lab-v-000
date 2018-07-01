@@ -12,6 +12,6 @@ class InteractiveRecord
   def initialize
   end
 
-  
+  de
 
 end
