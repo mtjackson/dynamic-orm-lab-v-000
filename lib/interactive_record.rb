@@ -58,6 +58,8 @@ class InteractiveRecord
     attribute.each do |key, value|
       if value.is_a? Integer
         sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{value}"
+      else
+        sql = "SELECT * FROM #{self.table_name} WHERE #{key} = '#{value}'"
     end
 
 
