@@ -56,6 +56,7 @@ class InteractiveRecord
   def self.find_by(attribute)
     attribute.each do |key, value|
       if value.is_a? Integer
+        sql
     end
 
 
