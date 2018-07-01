@@ -20,7 +20,7 @@ class InteractiveRecord
     column_names.compact
   end
 
-  def initialize
+  def initialize(options={})
   end
 
   def table_name_for_insert
