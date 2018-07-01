@@ -12,6 +12,6 @@ class InteractiveRecord
   def initialize
   end
 
-  de
+  def table_name_for_insert
 
 end
