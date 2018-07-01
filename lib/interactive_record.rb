@@ -57,7 +57,7 @@ class InteractiveRecord
     sql = ""
     attribute.each do |key, value|
       if value.is_a? Integer
-        sql
+        sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{value}"
     end
 
 
